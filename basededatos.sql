@@ -56,7 +56,7 @@ deterministic
 begin
 	declare var_costo_total decimal(5, 2) default 0;
 	select sum(costo) into var_costo_total from fuente where id_pedido = idpe;
-    return var_costo_total;
+	return var_costo_total;
 end$$
 delimiter ;
 
